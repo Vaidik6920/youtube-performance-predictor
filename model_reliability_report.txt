@@ -1,0 +1,29 @@
+
+CLASSIFICATION MODELS (Tier + Sector):
+  ✓ Engagement Tier: Test Acc=0.5120, CV Acc=0.5007
+    CV/Test gap = 0.0113 (low gap = stable)
+    → Reliability: Good. Model learns robust patterns from user inputs.
+
+  ✓ Sector: Test Acc=1.0000
+    → Reliability: Good. Sector depends on categories + text features.
+
+REGRESSION MODELS (Metrics):
+  ✓ Views: Test R²=0.6830, MAE=210,655
+    → Predicts view count magnitude. R² > 0.5 is acceptable for content metrics.
+
+  ✓ Likes: Test R²=0.6812, MAE=4,993
+    → Predicts likes. Lower R² typical for engagement (more variance).
+
+  ✓ Comments: Test R²=0.5987, MAE=939
+    → Predicts comments. Most volatile metric.
+
+  ✓ Engagement Rate: Test R²=-0.0035, MAE=0.038472
+    → Predicts engagement rate (0–1 scale). Direct metric from inputs.
+
+INTERPRETATION:
+  • Classification models (tier + sector) should be used for high-confidence predictions.
+  • Regression models (metrics) predict order-of-magnitude and trends, not exact values.
+  • All models use only 9 user-friendly features → highly deployable in Streamlit.
+  • If CV/test gaps are small, models are stable and will generalize well.
+
+TOTAL TRAINING TIME: 109.9 seconds

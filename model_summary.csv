@@ -1,0 +1,7 @@
+Model,Type,Test Score,CV Score,Stability
+Engagement Tier,Classification,0.5120 (Acc),0.5007,High
+Sector,Classification,1.0000 (Acc),N/A,High
+Views Predictor,Regression,0.6830 (R²),0.6423,Medium
+Likes Predictor,Regression,0.6812 (R²),0.6383,Medium
+Comments Predictor,Regression,0.5987 (R²),0.5929,Low
+Engagement Rate,Regression,-0.0035 (R²),0.0489,Medium

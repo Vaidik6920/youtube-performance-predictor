@@ -1,0 +1,38 @@
+
+[OK] MODELS TRAINED WITH SENTIMENT ANALYSIS:
+
+1. ENGAGEMENT TIER (Random Forest with Sentiment)
+   - Test Accuracy: 0.4854
+   - CV Accuracy: 0.4704
+   - Reliability: Stable
+
+2. SECTOR (CatBoost with Text + Sentiment)
+   - Test Accuracy: 1.0000
+   - Test F1-score: 1.0000
+   - Reliability: Good
+
+3-6. REGRESSION MODELS (with Sentiment Input)
+   - Views R2: 0.4441
+   - Likes R2: 0.5043
+   - Comments R2: 0.4714
+   - Engagement Rate R2: -0.0085
+
+SENTIMENT FEATURES USED:
+   - Title polarity & subjectivity
+   - Description polarity & subjectivity
+   - Combined polarity & subjectivity
+   - Sentiment categories
+
+ARTIFACTS CREATED:
+   [OK] model_engagement_rf_sentiment.pkl
+   [OK] model_sector_catboost_sentiment.cbm
+   [OK] model_views_regressor_sentiment.pkl
+   [OK] model_likes_regressor_sentiment.pkl
+   [OK] model_comments_regressor_sentiment.pkl
+   [OK] model_engagement_rate_regressor_sentiment.pkl
+   [OK] sentiment_distribution.png
+   [OK] sentiment_polarity_distribution.png
+   [OK] feature_importance_*.png/csv
+   [OK] confusion_matrix_*.png
+
+Total training time: 261.6 seconds
